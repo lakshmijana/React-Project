@@ -1,0 +1,40 @@
+.vedio {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;   /* 100% width */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center video horizontally */
+    align-items: center; /* Center video vertically */
+    overflow:hidden;
+  
+   
+  }
+  
+  /* Video styling */
+  .vedio video {
+    margin:0;
+    padding:0;
+    width: 100vw;  /* Fill the container horizontally */
+    height: 100vh; /* Fill the container vertically */
+    object-fit: cover; /* Cover the container area (cropping might occur) */
+  }
+  
+  @media (max-width: 768px) {
+    nav{
+      height: 50px; /* Reduce header height */
+    }
+  
+    header h1 {
+      font-size: 18px; /* Smaller font size for header */
+    }
+  
+    video {
+      top: 50px; /* Adjust to match reduced header height */
+      height: calc(100vh - 10vh); /* Ensure full coverage */
+      object-fit: contain;
+      width:100vh;
+      margin:0;
+      padding:0;
+    }
+  }
+  
+  

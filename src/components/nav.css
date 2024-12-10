@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+ 
+.nav {
+    display: flex;
+    position:fixed;
+    width:100%;
+  
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FA812F;
+    height: 10vh;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.nav .one {
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav .one ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 3px;
+    color:#800000;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+.nav .two {
+    display: flex;
+    margin-right: 50px;
+    gap: 60px; /* Adjusts spacing between menu items */
+}
+
+.nav .two a {
+    font-size: 26px;
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer;
+   
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+
+  .nav .one ul {
+      font-size: 32px;
+      text-align: center;
+  }
+
+  .nav .two {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      gap: 20px;
+  }
+
+  .nav .two a {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .one ul {
+      font-size: 28px;
+  }
+
+  .nav .two a {
+      font-size: 20px;
+  }
+}
