@@ -3,7 +3,7 @@
 
 import React from "react";
 import { FaUtensils, FaLeaf, FaSmile } from "react-icons/fa";
-import "./aboutUs.css"; // Importing the styles
+import "./aboutus.css"; // Importing the styles
 
 const AboutUs = () => {
   return (
