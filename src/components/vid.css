@@ -1,9 +1,9 @@
 .vedio {
-    height: 100vh; /* 100% of the viewport height */
-    width: 100%;   /* 100% width */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center video horizontally */
-    align-items: center; /* Center video vertically */
+    height: 100vh; 
+    width: 100%;   
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     overflow:hidden;
   
    
@@ -13,18 +13,18 @@
   .vedio video {
     margin:0;
     padding:0;
-    width: 100vw;  /* Fill the container horizontally */
-    height: 100vh; /* Fill the container vertically */
-    object-fit: cover; /* Cover the container area (cropping might occur) */
+    width: 100vw;  
+    height: 100vh; 
+    object-fit: cover; 
   }
   
   @media (max-width: 768px) {
     nav{
-      height: 50px; /* Reduce header height */
+      height: 50px;
     }
   
     header h1 {
-      font-size: 18px; /* Smaller font size for header */
+      font-size: 18px; 
     }
   
     video {
